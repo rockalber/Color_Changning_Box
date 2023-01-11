@@ -5,14 +5,14 @@ import './comp/Box.css';
 import Navbar from './comp/Navbar';  
 
 function App() {
-  const [colorz,setColorz] = useState('')
-  const [isValid,SetisValid] = useState(true);
+  const [colorz,setColorz] = useState('');
+  const [ButtonValue,SetbuttonValue] = useState('');
   const ChangeHandler = (event) =>{
-    if(event.target.value.trim().length===0){
-      SetisValid(false);
-    }
-      setColorz(event.target.value)
+    SetbuttonValue(event.target.value)}
+  const ButtonHandler =()=>{
+    setColorz(ButtonValue)
   }
+
   return (
     <div>
       <Navbar/>
@@ -21,7 +21,7 @@ function App() {
       <div style={{background:`${colorz}`}} className="box">
       </div>
     </div>
-      <Box Handler={ChangeHandler} IsValid={isValid}/>
+      <Box Handler={ChangeHandler} BtnValue={ButtonHandler}/>
     </div>
   );
 }
