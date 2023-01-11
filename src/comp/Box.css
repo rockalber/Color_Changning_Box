@@ -1,0 +1,42 @@
+
+
+.flex{
+    display:flex;
+    flex-direction: row;
+
+}
+.flex>div{
+    margin: auto;
+    margin-top: 10%;
+    border-style: solid;
+    border-color: black;
+    border-radius: 30px;
+    background-color:white;
+    align-items: center;
+    width: 30em;
+    height: 10em;
+    font-size: large;
+
+    
+}
+.textfiled{
+    margin-left: 30%;
+    justify-content: left;
+    outline: none;
+    border-color: red;
+    border-width: 2px;
+    
+}
+.textfiled.invalid input{
+    border-color: red;
+    background-color: rgb(255, 166, 166);
+
+}
+
+.label{
+    font-style: bold;
+    color:black;
+    font-size: larger;
+    float:center;
+    margin: 30%;
+}

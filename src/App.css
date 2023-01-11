@@ -1,0 +1,12 @@
+body{
+ background: white;
+}
+.h1{
+    animation-delay: 1s;
+    color:tomato;
+    font-style: oblique;
+    font-size: 60px;
+    font-family: monospace;
+    text-align: center;
+    margin: auto;
+}
